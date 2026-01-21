@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>DTP – Portfolio Piotra Barańskiego</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="subpage">
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark">PB</span>
+        <span class="nav__logo-text">Piotr Barański</span>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html#projects">Portfolio</a>
+        <a href="digital.html">Digital</a>
+        <a href="ui-web.html">UI & Web</a>
+        <a href="index.html#contact" class="nav__cta">Kontakt</a>
+      </nav>
+      <button class="nav__burger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="subhero">
+      <div class="container">
+        <p class="subhero__eyebrow">Portfolio</p>
+        <h1>DTP</h1>
+        <p class="subhero__subtitle">
+          Projekty do druku – layouty prasowe, katalogi, materiały marketingowe i branding.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="gallery">
+          <article class="gallery__item">
+            <div class="gallery__thumb gallery__thumb--placeholder">IMG</div>
+            <div class="gallery__content">
+              <h2>Layout magazynu branżowego</h2>
+              <p>Kompletny skład numeru – typografia, siatka, przygotowanie do druku.</p>
+              <ul class="gallery__tags">
+                <li>Layout</li>
+                <li>Magazyn</li>
+                <li>Typografia</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="gallery__item">
+            <div class="gallery__thumb gallery__thumb--placeholder">IMG</div>
+            <div class="gallery__content">
+              <h2>Katalog produktowy</h2>
+              <p>Katalog dla marki e-commerce – konsekwentne stosowanie key-visuali i struktur danych.</p>
+              <ul class="gallery__tags">
+                <li>Katalog</li>
+                <li>Branding</li>
+                <li>DTP</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="gallery__item">
+            <div class="gallery__thumb gallery__thumb--placeholder">IMG</div>
+            <div class="gallery__content">
+              <h2>Materiały POS i outdoor</h2>
+              <p>Plakaty, roll-upy i materiały wspierające kampanie offline.</p>
+              <ul class="gallery__tags">
+                <li>POS</li>
+                <li>Outdoor</li>
+                <li>Druk</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Piotr Barański.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
