@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Piotr Barański – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio Piotra Barańskiego – Frontend Developer, Webdesigner, Graphic & UI/UX Designer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark">PB</span>
+        <span class="nav__logo-text">Piotr Barański</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#about">O mnie</a>
+        <a href="#skills">Umiejętności</a>
+        <a href="#experience">Doświadczenie</a>
+        <a href="#projects">Projekty</a>
+        <a href="#contact" class="nav__cta">Kontakt</a>
+      </nav>
+      <button class="nav__burger" aria-label="Otwórz menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__gradient"></div>
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Frontend Developer • UI/UX • Graphic & Motion</p>
+          <h1>Projektuję i wdrażam<br><span class="hero__highlight">nowoczesne doświadczenia cyfrowe</span></h1>
+          <p class="hero__subtitle">
+            Łączę design, animację i technologię, tworząc kompletne rozwiązania
+            – od identyfikacji wizualnej, przez layouty stron i aplikacji, po wdrożenie w CMS.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Porozmawiajmy o współpracy</a>
+            <a href="#projects" class="btn btn--ghost">Zobacz realizacje</a>
+          </div>
+          <div class="hero__tags">
+            <span>UI/UX</span>
+            <span>Webdesign</span>
+            <span>Frontend</span>
+            <span>Motion</span>
+            <span>CMS</span>
+          </div>
+        </div>
+        <div class="hero__card">
+          <h2>Profil</h2>
+          <p>Frontend Developer | Webmaster | CMS Specialist | Graphic & UI/UX Designer</p>
+          <ul class="hero__list">
+            <li><strong>Lokalizacja:</strong> Polska (remote-friendly)</li>
+            <li><strong>Języki:</strong> polski C2, angielski B2</li>
+            <li><strong>Narzędzia:</strong> Figma, Adobe CC, Webflow, WordPress, HubSpot CMS</li>
+          </ul>
+          <div class="hero__contact">
+            <a href="mailto:piotrbaranski96@gmail.com">piotrbaranski96@gmail.com</a>
+            <span>+48 723 224 613</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O MNIE -->
+    <section id="about" class="section">
+      <div class="container section__grid">
+        <div>
+          <h2>O mnie</h2>
+          <p>
+            Jestem projektantem graficznym, motion designerem oraz UI/UX designerem
+            z silnym zapleczem technicznym i doświadczeniem we współpracy z zespołami marketingowymi.
+          </p>
+          <p>
+            Na co dzień pracuję w środowisku Adobe Creative Cloud, Figmy, Pika, Hotjar i Google Analytics.
+            Wykorzystuję AI (ChatGPT, Midjourney, Cursor) do prototypowania, generowania koncepcji wizualnych,
+            optymalizacji treści i automatyzacji powtarzalnych zadań.
+          </p>
+          <p>
+            Projektuję w oparciu o zasady UX, aktualne trendy UI i potrzeby biznesowe –
+            dbając o spójność, estetykę i skuteczność komunikacji wizualnej.
+          </p>
+        </div>
+        <div class="about__highlights">
+          <div class="card card--soft">
+            <h3>Specjalizacje</h3>
+            <ul>
+              <li>Projektowanie UI/UX (web & mobile)</li>
+              <li>Projektowanie systemów identyfikacji wizualnej</li>
+              <li>Layouty kampanii i landing page'y</li>
+              <li>Motion design i animacje promocyjne</li>
+              <li>Implementacja w CMS (WordPress, Webflow, HubSpot)</li>
+            </ul>
+          </div>
+          <div class="card card--soft">
+            <h3>Współpraca</h3>
+            <ul>
+              <li>Zespoły marketingowe i sprzedażowe</li>
+              <li>Product & growth zespoły</li>
+              <li>Software house'y i agencje</li>
+              <li>Marki e-commerce</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UMIEJĘTNOŚCI -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <h2>Umiejętności</h2>
+          <p>Design, frontend i wdrożenia w CMS – pełny stack pod nowoczesne projekty cyfrowe.</p>
+        </div>
+        <div class="skills__grid">
+          <div class="card">
+            <h3>Design • UI/UX</h3>
+            <p>Figma, Adobe XD, Photoshop, Illustrator, After Effects, Canon.</p>
+            <ul>
+              <li>Prototypowanie, user flows, wireframes</li>
+              <li>Responsive design, design systems, komponenty</li>
+              <li>Identyfikacje wizualne, key visuals, layouty kampanii</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Frontend Development</h3>
+            <p>HTML5, CSS3/SCSS, JavaScript (ES6+), Bootstrap.</p>
+            <ul>
+              <li>Webflow, WordPress, HubSpot CMS, Strapi</li>
+              <li>Integracje z REST API</li>
+              <li>Optymalizacja wydajności i SEO basics</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Analytics & AI</h3>
+            <p>Hotjar, Google Analytics, narzędzia AI.</p>
+            <ul>
+              <li>Analiza zachowań użytkowników</li>
+              <li>Generowanie wariantów kreacji, moodboardy</li>
+              <li>Automatyzacja pracy kreatywnej</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOŚWIADCZENIE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2>Doświadczenie</h2>
+          <p>Od digitalu i kampanii performance, po UI/UX i wdrożenia webowe.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__meta">
+              <span class="timeline__date">08.2023 – 04.2024</span>
+              <span class="timeline__location">Profitroom</span>
+            </div>
+            <div class="timeline__content">
+              <h3>Webdesigner / Webdeveloper / Webmaster</h3>
+              <ul>
+                <li>Projektowanie layoutów stron, landing page'y i komponentów UI w Figmie zgodnie z brandbookami.</li>
+                <li>Tworzenie grafik kampanii, banerów statycznych i animowanych, materiałów do Google Ads.</li>
+                <li>Praca z HubSpot CMS – podstrony, moduły, formularze, implementacje HTML/CSS/JS.</li>
+                <li>Analiza zachowań użytkowników (Hotjar, GA) i rekomendacje UX.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__meta">
+              <span class="timeline__date">01.2023 – 06.2023</span>
+              <span class="timeline__location">Idealla Digital Hub</span>
+            </div>
+            <div class="timeline__content">
+              <h3>Graphic Designer</h3>
+              <ul>
+                <li>Projektowanie grafik na social media oraz layoutów stron pod kątem UI/UX.</li>
+                <li>Tworzenie animacji i rebrandingów, key visuals oraz corporate identity.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__meta">
+              <span class="timeline__date">11.2021 – 01.2023</span>
+              <span class="timeline__location">Mobile Marketing Center</span>
+            </div>
+            <div class="timeline__content">
+              <h3>Graphic Designer</h3>
+              <ul>
+                <li>Przygotowanie projektów do wydawnictw prasowych, landing page'y i stron pod kątem UI.</li>
+                <li>Grafiki do social media, kampanii Google Ads, animacje promocyjne.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__meta">
+              <span class="timeline__date">10.2020 – 11.2021</span>
+              <span class="timeline__location">Raisead</span>
+            </div>
+            <div class="timeline__content">
+              <h3>Graphic Designer</h3>
+              <ul>
+                <li>Projekty do druku, landing page'e i kreacje social media.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__meta">
+              <span class="timeline__date">10.2019 – 10.2020</span>
+              <span class="timeline__location">Mivo</span>
+            </div>
+            <div class="timeline__content">
+              <h3>Graphic Designer</h3>
+              <ul>
+                <li>Grafiki na social media i stronę www, mailingi, banery do Google Ads.</li>
+                <li>Wsparcie marketingu – analiza skuteczności social media, mailingów i sprzedaży.</li>
+                <li>Kodowanie mailingów w HTML/CSS, modyfikacje na stronie.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJEKTY / KATEGORIE -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <h2>Portfolio</h2>
+          <p>Podzielone na trzy główne kategorie – od digitalu po pełne projekty UI i DTP.</p>
+        </div>
+        <div class="projects__grid">
+          <a href="digital.html" class="project-card">
+            <div class="project-card__badge">Digital</div>
+            <h3>Kreacje digital & social</h3>
+            <p>Banery, social media, animacje, kampanie display i performance.</p>
+            <span class="project-card__link">Zobacz prace →</span>
+          </a>
+          <a href="ui-web.html" class="project-card">
+            <div class="project-card__badge">UI & Web</div>
+            <h3>Strony, aplikacje, landing page'e</h3>
+            <p>UI/UX, prototypy, design systemy i wdrożenia frontendowe.</p>
+            <span class="project-card__link">Zobacz prace →</span>
+          </a>
+          <a href="dtp.html" class="project-card">
+            <div class="project-card__badge">DTP</div>
+            <h3>Druk & publikacje</h3>
+            <p>Layouty prasowe, materiały drukowane, katalogi i wydawnictwa.</p>
+            <span class="project-card__link">Zobacz prace →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="contact" class="section section--contact">
+      <div class="container contact__grid">
+        <div>
+          <h2>Kontakt</h2>
+          <p>
+            Masz projekt, nad którym chcesz porozmawiać, lub szukasz wsparcia
+            w zespole? Napisz – odpowiem możliwie szybko.
+          </p>
+          <ul class="contact__info">
+            <li><strong>E-mail:</strong> <a href="mailto:piotrbaranski96@gmail.com">piotrbaranski96@gmail.com</a></li>
+            <li><strong>Telefon:</strong> +48 723 224 613</li>
+            <li><strong>Preferowana forma:</strong> mail lub krótkie intro call</li>
+          </ul>
+        </div>
+        <div>
+          <form class="contact__form" method="POST" action="https://formspree.io/f/your-form-id" id="contact-form">
+            <!-- UWAGA: Zmień 'your-form-id' na swój prawdziwy endpoint Formspree -->
+            <div class="form__row">
+              <label for="name">Imię i nazwisko</label>
+              <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required />
+            </div>
+            <div class="form__row">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="_replyto" placeholder="twoj@adres.com" required />
+            </div>
+            <div class="form__row">
+              <label for="message">Wiadomość</label>
+              <textarea id="message" name="message" rows="5" placeholder="Opisz krótko projekt lub potrzebę" required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="Nowa wiadomość z portfolio – piotrbaranski96@gmail.com" />
+            <button type="submit" class="btn btn--primary btn--full">Wyślij wiadomość</button>
+            <p class="form__note">
+              Formularz wysyła wiadomości bezpośrednio na <strong>piotrbaranski96@gmail.com</strong>.
+            </p>
+            <div id="form-message" class="form__message"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Piotr Barański. Wszystkie prawa zastrzeżone.</span>
+      <span class="footer__meta">Portfolio inspirowane układem <a href="https://webflow.com/" target="_blank" rel="noreferrer">Webflow</a>.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
