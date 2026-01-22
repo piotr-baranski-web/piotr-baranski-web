@@ -312,15 +312,11 @@ body {
 .hero__portfolio-link::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: linear-gradient(145deg, rgba(15,23,42,0.0), rgba(15,23,42,0.45));
   opacity: 0;
   transition: opacity 0.18s ease;
   pointer-events: none;
-  z-index: 0;
 }
 
 .hero__portfolio-link:hover {
