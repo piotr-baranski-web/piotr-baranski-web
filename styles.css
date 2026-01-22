@@ -100,7 +100,7 @@ body {
 }
 
 .section__header h2 {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 8px;
   color: var(--navy);
   font-weight: 700;
@@ -578,6 +578,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 6px;
+  color: var(--navy);
 }
 
 .form__row input,
