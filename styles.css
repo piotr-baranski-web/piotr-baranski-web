@@ -309,11 +309,6 @@ body {
   display: block;
 }
 
-.hero__portfolio-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 28px 50px rgba(15, 23, 42, 0.25);
-}
-
 .hero__portfolio-link::after {
   content: "";
   position: absolute;
@@ -321,6 +316,13 @@ body {
   background: linear-gradient(145deg, rgba(15,23,42,0.0), rgba(15,23,42,0.45));
   opacity: 0;
   transition: opacity 0.18s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero__portfolio-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 28px 50px rgba(15, 23, 42, 0.25);
 }
 
 .hero__portfolio-link:hover::after {
