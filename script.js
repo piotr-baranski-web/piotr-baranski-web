@@ -35,23 +35,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         const formData = new FormData(form);
-        const response = await fetch(form.action, {
+        formData.append("access_key", "350a660b-7490-42d7-9227-9966740f6b58");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
-          body: formData,
-          headers: {
-            Accept: "application/json",
-          },
+          body: formData
         });
 
-        const result = await response.json();
-        
-        if (response.ok && result.success) {
+        const data = await response.json();
+
+        if (response.ok && data.success) {
           formMessage.textContent = "Dziękuję! Wiadomość została wysłana. Odpowiem wkrótce.";
           formMessage.className = "form__message success";
           formMessage.style.display = "block";
           form.reset();
         } else {
-          throw new Error(result.message || "Błąd wysyłania");
+          throw new Error(data.message || "Błąd wysyłania");
         }
       } catch (error) {
         formMessage.textContent = "Przepraszam, wystąpił błąd. Spróbuj ponownie lub napisz bezpośrednio na piotrbaranski96@gmail.com";
