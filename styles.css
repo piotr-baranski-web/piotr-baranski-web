@@ -42,6 +42,8 @@
   --bg: #ffffff;
   --primary: #4399cf;
   --primary-dark: #2d7fb8;
+  --navy: #1a1a80;
+  --navy-dark: #161671;
   --accent: #4399cf;
   --text-main: #111827;
   --text-muted: #6b7280;
@@ -100,6 +102,8 @@ body {
 .section__header h2 {
   font-size: 32px;
   margin-bottom: 8px;
+  color: var(--navy);
+  font-weight: 700;
 }
 
 .section__header p {
@@ -142,7 +146,7 @@ body {
   justify-content: center;
   color: #fff;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   box-shadow: var(--shadow-light);
 }
 
@@ -155,20 +159,21 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .nav__links a {
   text-decoration: none;
-  color: #1f2933;
+  color: var(--navy);
   padding: 6px 10px;
   border-radius: 999px;
   transition: background 0.18s ease, color 0.18s ease;
+  font-weight: 500;
 }
 
 .nav__links a:hover {
-  background: rgba(67, 153, 207, 0.08);
-  color: var(--primary-dark);
+  background: rgba(26, 26, 128, 0.1);
+  color: var(--navy-dark);
 }
 
 .nav__cta {
@@ -249,7 +254,7 @@ body {
 }
 
 .hero__eyebrow {
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
@@ -325,7 +330,7 @@ body {
 
 .hero__portfolio-link p {
   margin: 0 0 20px;
-  font-size: 14px;
+  font-size: 16px;
   color: #FFFFFF;
   position: relative;
   z-index: 2;
@@ -377,13 +382,15 @@ body {
 .card h3 {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 20px;
+  color: var(--navy);
+  font-weight: 600;
 }
 
 .card ul {
   padding-left: 18px;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .card ul li + li {
@@ -417,7 +424,7 @@ body {
 }
 
 .timeline__meta {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--text-muted);
   display: flex;
   flex-direction: column;
@@ -426,7 +433,7 @@ body {
 
 .timeline__date {
   font-weight: 600;
-  color: var(--accent);
+  color: var(--navy);
 }
 
 .timeline__location {
@@ -436,13 +443,15 @@ body {
 .timeline__content h3 {
   margin-top: 0;
   margin-bottom: 8px;
-  font-size: 16px;
+  font-size: 18px;
+  color: var(--navy);
+  font-weight: 600;
 }
 
 .timeline__content ul {
   margin: 0;
   padding-left: 18px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .timeline__content li + li {
@@ -492,7 +501,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   background: rgba(67, 153, 207, 0.2);
@@ -509,12 +518,12 @@ body {
 
 .project-card p {
   margin: 0 0 20px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-muted);
 }
 
 .project-card__link {
-  font-size: 13px;
+  font-size: 16px;
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -534,7 +543,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 20px 0 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .contact__info li + li {
@@ -542,12 +551,14 @@ body {
 }
 
 .contact__info a {
-  color: var(--accent);
+  color: var(--navy);
   text-decoration: none;
+  font-weight: 500;
 }
 
 .contact__info a:hover {
   text-decoration: underline;
+  color: var(--navy-dark);
 }
 
 .contact__form {
@@ -564,7 +575,7 @@ body {
 
 .form__row label {
   display: block;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 6px;
 }
@@ -588,7 +599,7 @@ body {
 
 .form__note {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 16px;
   color: var(--text-muted);
 }
 
@@ -596,7 +607,7 @@ body {
   margin-top: 12px;
   padding: 10px;
   border-radius: 8px;
-  font-size: 13px;
+  font-size: 16px;
   display: none;
 }
 
@@ -620,7 +631,7 @@ body {
   justify-content: center;
   padding: 10px 18px;
   border-radius: var(--radius-sm);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   border: none;
   cursor: pointer;
@@ -664,7 +675,7 @@ body {
 }
 
 .subhero__eyebrow {
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
@@ -682,7 +693,7 @@ body {
   max-width: 640px;
   margin: 0;
   color: var(--text-muted);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Gallery */
@@ -857,7 +868,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
-  font-size: 12px;
+  font-size: 16px;
   color: #6b7280;
 }
 
