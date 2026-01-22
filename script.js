@@ -43,13 +43,15 @@ document.addEventListener("DOMContentLoaded", () => {
           },
         });
 
-        if (response.ok) {
+        const result = await response.json();
+        
+        if (response.ok && result.success) {
           formMessage.textContent = "Dziękuję! Wiadomość została wysłana. Odpowiem wkrótce.";
           formMessage.className = "form__message success";
           formMessage.style.display = "block";
           form.reset();
         } else {
-          throw new Error("Błąd wysyłania");
+          throw new Error(result.message || "Błąd wysyłania");
         }
       } catch (error) {
         formMessage.textContent = "Przepraszam, wystąpił błąd. Spróbuj ponownie lub napisz bezpośrednio na piotrbaranski96@gmail.com";
