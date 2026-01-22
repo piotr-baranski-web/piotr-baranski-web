@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
@@ -41,7 +41,15 @@
       <div class="container">
         <div class="gallery">
           <article class="gallery__item">
-            <div class="gallery__thumb gallery__thumb--placeholder">IMG</div>
+            
+                if ($counter -lt $images.Count) {
+                    $img = $images[$counter]
+                    $imgPath = "$folderName/$($img.Name)"
+                    $counter++
+                    return "<div class="gallery__thumb gallery__thumb--placeholder"><img src=`"$imgPath`" alt=`"$($img.BaseName)`" style=`"width:100%;height:100%;object-fit:cover;border-radius:16px;`"></div>"
+                }
+                return $matches[0]
+            
             <div class="gallery__content">
               <h2>Layout magazynu branżowego</h2>
               <p>Kompletny skład numeru – typografia, siatka, przygotowanie do druku.</p>
@@ -54,7 +62,15 @@
           </article>
 
           <article class="gallery__item">
-            <div class="gallery__thumb gallery__thumb--placeholder">IMG</div>
+            
+                if ($counter -lt $images.Count) {
+                    $img = $images[$counter]
+                    $imgPath = "$folderName/$($img.Name)"
+                    $counter++
+                    return "<div class="gallery__thumb gallery__thumb--placeholder"><img src=`"$imgPath`" alt=`"$($img.BaseName)`" style=`"width:100%;height:100%;object-fit:cover;border-radius:16px;`"></div>"
+                }
+                return $matches[0]
+            
             <div class="gallery__content">
               <h2>Katalog produktowy</h2>
               <p>Katalog dla marki e-commerce – konsekwentne stosowanie key-visuali i struktur danych.</p>
@@ -67,7 +83,15 @@
           </article>
 
           <article class="gallery__item">
-            <div class="gallery__thumb gallery__thumb--placeholder">IMG</div>
+            
+                if ($counter -lt $images.Count) {
+                    $img = $images[$counter]
+                    $imgPath = "$folderName/$($img.Name)"
+                    $counter++
+                    return "<div class="gallery__thumb gallery__thumb--placeholder"><img src=`"$imgPath`" alt=`"$($img.BaseName)`" style=`"width:100%;height:100%;object-fit:cover;border-radius:16px;`"></div>"
+                }
+                return $matches[0]
+            
             <div class="gallery__content">
               <h2>Materiały POS i outdoor</h2>
               <p>Plakaty, roll-upy i materiały wspierające kampanie offline.</p>
@@ -77,8 +101,175 @@
                 <li>Druk</li>
               </ul>
             </div>
-          </article>
-        </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/050424_Profitroom_Email_campaign_Ebook_PL3.png" alt="050424_Profitroom_Email_campaign_Ebook_PL3" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>050424_Profitroom_Email_campaign_Ebook_PL3</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/050424_Profitroom_Email_campaign_Ebook_PL4.png" alt="050424_Profitroom_Email_campaign_Ebook_PL4" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>050424_Profitroom_Email_campaign_Ebook_PL4</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/050424_Profitroom_Email_campaign_Ebook_PL5.png" alt="050424_Profitroom_Email_campaign_Ebook_PL5" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>050424_Profitroom_Email_campaign_Ebook_PL5</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/141123_Profitroom_hsmai_A5.png" alt="141123_Profitroom_hsmai_A5" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>141123_Profitroom_hsmai_A5</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/141123_Profitroom_hsmai_A52.png" alt="141123_Profitroom_hsmai_A52" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>141123_Profitroom_hsmai_A52</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/240814_Profitroom_One_Pager_Websites_VIP_Concierge_SA.png" alt="240814_Profitroom_One_Pager_Websites_VIP_Concierge_SA" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>240814_Profitroom_One_Pager_Websites_VIP_Concierge_SA</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/240814_Profitroom_One_Pager_Websites_VIP_Concierge_SA2.png" alt="240814_Profitroom_One_Pager_Websites_VIP_Concierge_SA2" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>240814_Profitroom_One_Pager_Websites_VIP_Concierge_SA2</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/242006_Profitroom_On_Tour_sponsorship_offer_Dubai_02.png" alt="242006_Profitroom_On_Tour_sponsorship_offer_Dubai_02" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>242006_Profitroom_On_Tour_sponsorship_offer_Dubai_02</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/242006_Profitroom_On_Tour_sponsorship_offer_Dubai_022.png" alt="242006_Profitroom_On_Tour_sponsorship_offer_Dubai_022" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>242006_Profitroom_On_Tour_sponsorship_offer_Dubai_022</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/849430238116983.6964ff08c9f05.png" alt="849430238116983.6964ff08c9f05" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>849430238116983.6964ff08c9f05</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/8d1ba0238116983.6964ff08c6b18.png" alt="8d1ba0238116983.6964ff08c6b18" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>8d1ba0238116983.6964ff08c6b18</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/c9df0b238116983.6964ff08c75e2.png" alt="c9df0b238116983.6964ff08c75e2" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>c9df0b238116983.6964ff08c75e2</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/cddf68238116983.6964ff08c7dd6.png" alt="cddf68238116983.6964ff08c7dd6" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>cddf68238116983.6964ff08c7dd6</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/d48fe9238116983.6964ff08cafa4.png" alt="d48fe9238116983.6964ff08cafa4" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>d48fe9238116983.6964ff08cafa4</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/idh_program_partnerski_Strona_1-ljehmljo.jpg" alt="idh_program_partnerski_Strona_1-ljehmljo" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>idh_program_partnerski_Strona_1-ljehmljo</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/idh_program_partnerski_Strona_2-ljehmmjp.jpg" alt="idh_program_partnerski_Strona_2-ljehmmjp" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>idh_program_partnerski_Strona_2-ljehmmjp</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/idh_program_partnerski_Strona_3-ljehmnj5.jpg" alt="idh_program_partnerski_Strona_3-ljehmnj5" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>idh_program_partnerski_Strona_3-ljehmnj5</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/idh_program_partnerski_Strona_4-ljehmoi8.jpg" alt="idh_program_partnerski_Strona_4-ljehmoi8" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>idh_program_partnerski_Strona_4-ljehmoi8</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/inforgrafika-l28p6v9j.png" alt="inforgrafika-l28p6v9j" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>inforgrafika-l28p6v9j</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/projekt_rollup_rtb-2-ljigv3ve.png" alt="projekt_rollup_rtb-2-ljigv3ve" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>projekt_rollup_rtb-2-ljigv3ve</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>          <article class="gallery__item">
+            <div class="gallery__thumb">
+              <img src="dtp/rollup_simplemed_100x210-1-ljigzyn4.png" alt="rollup_simplemed_100x210-1-ljigzyn4" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+            </div>
+            <div class="gallery__content">
+              <h2>rollup_simplemed_100x210-1-ljigzyn4</h2>
+              <p>Projekt z portfolio digital.</p>
+            </div>
+          </article>        </div>
       </div>
     </section>
   </main>
