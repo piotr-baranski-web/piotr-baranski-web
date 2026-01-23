@@ -903,7 +903,8 @@ body {
   }
 
   .skills__grid,
-  .projects__grid {
+  .projects__grid,
+  .hero__portfolio-links {
     grid-template-columns: minmax(0, 1fr);
   }
 
