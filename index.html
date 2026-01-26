@@ -30,6 +30,7 @@
         <a href="dtp.html">DTP</a>
         <a href="animacje.html">Animacje</a>
         <a href="#contact" class="nav__cta">Kontakt</a>
+        <a href="index-en.html" class="nav__lang">EN</a>
       </nav>
       <button class="nav__burger" aria-label="Otwórz menu">
         <span></span><span></span><span></span>
@@ -86,6 +87,27 @@
       </div>
     </section>
 
+    <!-- WELCOME SECTION -->
+    <section class="welcome-section">
+      <div class="container">
+        <div class="welcome-scroll">
+          <div class="welcome-scroll__mask welcome-scroll__mask--left"></div>
+          <div class="welcome-scroll__content">
+            <span class="welcome-scroll__text">Witaj na moim Portfolio</span>
+            <span class="welcome-scroll__text">Witaj na moim Portfolio</span>
+            <span class="welcome-scroll__text">Witaj na moim Portfolio</span>
+            <span class="welcome-scroll__text">Witaj na moim Portfolio</span>
+          </div>
+          <div class="welcome-scroll__mask welcome-scroll__mask--right"></div>
+        </div>
+        <div class="works-showcase">
+          <div class="works-showcase__container" id="works-showcase">
+            <!-- Works will be dynamically generated here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- O MNIE -->
     <section id="about" class="section">
       <div class="container section__grid">
@@ -125,6 +147,26 @@
               <li>Analiza UX i optymalizacja doświadczeń użytkownika</li>
               <li>Wykorzystanie AI w procesach kreatywnych</li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATYSTYKI -->
+    <section id="stats" class="section section--stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item">
+            <div class="stats__number" data-target="7" data-suffix="+">0+</div>
+            <div class="stats__label">lat doświadczenia</div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__number" data-target="1000" data-suffix="+">0+</div>
+            <div class="stats__label">projektów zrealizowanych</div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__number" data-target="50" data-suffix="+">0+</div>
+            <div class="stats__label">zrealizowanych kampanii</div>
           </div>
         </div>
       </div>
@@ -238,9 +280,6 @@
               <textarea id="message" name="message" rows="5" placeholder="Opisz krótko projekt lub potrzebę" required></textarea>
             </div>
             <button type="submit" class="btn btn--primary">Wyślij wiadomość</button>
-            <p class="form__note">
-              Formularz wysyła wiadomości bezpośrednio na <strong>piotrbaranski96@gmail.com</strong>.
-            </p>
             <div id="form-message" class="form__message"></div>
           </form>
         </div>
@@ -250,7 +289,13 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span id="year"></span> Piotr Barański. Wszystkie prawa zastrzeżone.</span>
+      <div>
+        <p class="footer__description">Frontend Developer • UI/UX Designer • Graphic & Motion Designer</p>
+        <p class="footer__subtitle">Projektowanie i wdrożenia cyfrowe z naciskiem na design, technologię i wyniki.</p>
+      </div>
+      <div class="footer__copyright">
+        <span>© <span id="year"></span> Piotr Barański. Wszystkie prawa zastrzeżone.</span>
+      </div>
     </div>
   </footer>
 
