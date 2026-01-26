@@ -1401,6 +1401,16 @@ body.subpage .footer:hover .footer__inner {
 }
 
 @media (max-width: 600px) {
+  .hero__logo-bg {
+    align-items: flex-start;
+    padding-top: 80px;
+  }
+  
+  .hero__logo-svg {
+    width: 500px;
+    height: 500px;
+  }
+  
   .welcome-section {
     padding: 60px 0;
   }
