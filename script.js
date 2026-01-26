@@ -426,7 +426,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelector(".nav__links");
 
   if (burger && links) {
-    burger.addEventListener("click", () => {
+    burger.addEventListener("click", (e) => {
+      e.stopPropagation();
       links.classList.toggle("nav__links--open");
     });
 
@@ -434,6 +435,21 @@ document.addEventListener("DOMContentLoaded", () => {
       a.addEventListener("click", () => {
         links.classList.remove("nav__links--open");
       });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (e) => {
+      if (links.classList.contains("nav__links--open")) {
+        // Check if click is outside both burger and menu
+        if (!links.contains(e.target) && !burger.contains(e.target)) {
+          links.classList.remove("nav__links--open");
+        }
+      }
+    });
+
+    // Prevent menu from closing when clicking inside it
+    links.addEventListener("click", (e) => {
+      e.stopPropagation();
     });
   }
 
