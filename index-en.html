@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Piotr Barański – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Piotr Barański's Portfolio – Frontend Developer, Webdesigner, Graphic & UI/UX Designer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="index-en.html" class="nav__logo">
+        <span class="nav__logo-mark">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" class="nav__logo-img" preserveAspectRatio="xMidYMid meet">
+            <path d="M600,142.79c-96.46,0-185.88,30.1-259.43,81.38V6.34c-73,32.48-138.91,78.02-194.74,133.67v456.77
+              c0,0.06,0,0.12,0,0.18c0,0.06,0,0.12,0,0.18v462.84c55.83,55.65,121.74,101.19,194.74,133.67v-223.9
+              c73.55,51.28,162.97,81.38,259.43,81.38c250.83,0,454.17-203.34,454.17-454.17S850.83,142.79,600,142.79z M600,856.37
+              c-143.27,0-259.41-116.14-259.41-259.41S456.73,337.56,600,337.56S859.41,453.7,859.41,596.96S743.27,856.37,600,856.37z"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">Piotr Barański</span>
+      </a>
+      <nav class="nav__links">
+        <a href="digital.html">Digital</a>
+        <a href="ui-web.html">UI & Web</a>
+        <a href="dtp.html">DTP</a>
+        <a href="animacje.html">Animations</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+        <a href="index.html" class="nav__lang">PL</a>
+      </nav>
+      <button class="nav__burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__animated-bg"></div>
+      <div class="hero__gradient"></div>
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Frontend Developer • UI/UX • Graphic & Motion</p>
+          <h1>From idea<br><span class="hero__highlight">to implementation</span></h1>
+          <p class="hero__subtitle">
+            I design and code – from visual identity and website layouts,
+            through animations and campaigns, to CMS implementation. Design that delivers results.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Let's talk about collaboration</a>
+            <a href="#projects" class="btn btn--ghost">View portfolio</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero__portfolio-links">
+          <a href="digital.html" class="hero__portfolio-link">
+            <div class="project-card__badge">Digital</div>
+            <h3>Digital & social creatives</h3>
+            <p>Banners, social media, animations, display and performance campaigns.</p>
+            <span class="project-card__link">View work →</span>
+          </a>
+          <a href="ui-web.html" class="hero__portfolio-link">
+            <div class="project-card__badge">UI & Web</div>
+            <h3>Websites, applications, landing pages</h3>
+            <p>UI/UX, prototypes, design systems and frontend implementations.</p>
+            <span class="project-card__link">View work →</span>
+          </a>
+          <a href="dtp.html" class="hero__portfolio-link">
+            <div class="project-card__badge">DTP</div>
+            <h3>Print & publications</h3>
+            <p>Press layouts, print materials, catalogs and publications.</p>
+            <span class="project-card__link">View work →</span>
+          </a>
+          <a href="animacje.html" class="hero__portfolio-link">
+            <div class="project-card__badge">Animations</div>
+            <h3>Motion design & video</h3>
+            <p>Promotional animations, motion graphics, video creatives and campaigns.</p>
+            <span class="project-card__link">View work →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WELCOME SECTION -->
+    <section class="welcome-section">
+      <div class="container">
+        <div class="welcome-scroll">
+          <div class="welcome-scroll__mask welcome-scroll__mask--left"></div>
+          <div class="welcome-scroll__content">
+            <span class="welcome-scroll__text">Welcome to my Portfolio</span>
+            <span class="welcome-scroll__text">Welcome to my Portfolio</span>
+            <span class="welcome-scroll__text">Welcome to my Portfolio</span>
+            <span class="welcome-scroll__text">Welcome to my Portfolio</span>
+          </div>
+          <div class="welcome-scroll__mask welcome-scroll__mask--right"></div>
+        </div>
+        <div class="works-showcase">
+          <div class="works-showcase__container" id="works-showcase">
+            <!-- Works will be dynamically generated here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container section__grid">
+        <div>
+          <h2>About me</h2>
+          <p>
+            I'm a graphic designer, motion designer, and UI/UX designer with strong 
+            technical background and experience working with marketing teams. In my 
+            projects, I combine design, animation, and technology to create comprehensive 
+            visual solutions for brands and digital products.
+          </p>
+          <p>
+            On a daily basis, I work with Adobe Creative Cloud, Figma, Miro, Hotjar, and Google 
+            Analytics tools that support me in researching user behavior, designing interfaces 
+            and optimizing experiences. I implement my projects in CMS systems. Additionally, 
+            I use AI technologies such as ChatGPT, Midjourney, Cursor, and Bolt to accelerate 
+            creative processes, from prototyping to generating visual concepts, 
+            coding, copy optimization, and automating repetitive tasks.
+          </p>
+          <p>
+            I create visual identities, website and application layouts, motion animations, banners, campaign 
+            creatives, and digital and social media materials. I design based on UX principles and the latest 
+            UI trends, ensuring consistency, aesthetics, and effectiveness of visual communication.
+          </p>
+        </div>
+        <div class="about__highlights">
+          <div class="card card--soft">
+            <h3>Specializations</h3>
+            <ul>
+              <li>UI/UX design (web)</li>
+              <li>Visual identity system design</li>
+              <li>Campaign layouts and landing pages</li>
+              <li>Motion design and promotional animations</li>
+              <li>CMS implementation (WordPress, Webflow, HubSpot)</li>
+              <li>Digital and social media creatives</li>
+              <li>Banners and display materials</li>
+              <li>UX analysis and user experience optimization</li>
+              <li>AI utilization in creative processes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section id="stats" class="section section--stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item">
+            <div class="stats__number" data-target="7" data-suffix="+">0+</div>
+            <div class="stats__label">years of experience</div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__number" data-target="1000" data-suffix="+">0+</div>
+            <div class="stats__label">projects completed</div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__number" data-target="50" data-suffix="+">0+</div>
+            <div class="stats__label">campaigns completed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <h2>Skills</h2>
+          <p>Design, frontend and CMS implementations – full stack for modern digital projects.</p>
+        </div>
+        <div class="skills__grid">
+          <div class="card">
+            <h3>Design • UI/UX</h3>
+            <p>Figma, Adobe XD, Photoshop, Illustrator, After Effects.</p>
+            <ul>
+              <li>Prototyping, user flows, wireframes</li>
+              <li>Responsive design, design systems, components</li>
+              <li>Visual identities, key visuals, campaign layouts</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Frontend Development</h3>
+            <p>HTML5, CSS3/SCSS, JavaScript (ES6+), Bootstrap.</p>
+            <ul>
+              <li>Webflow, WordPress, HubSpot CMS, Strapi</li>
+              <li>REST API integrations</li>
+              <li>Performance optimization and SEO basics</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Analytics & AI</h3>
+            <p>Hotjar, Google Analytics, AI tools.</p>
+            <ul>
+              <li>User behavior analysis</li>
+              <li>Creative variant generation, moodboards</li>
+              <li>Creative work automation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / CATEGORIES -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <h2>Portfolio</h2>
+          <p>Divided into three main categories – from digital to full UI and DTP projects.</p>
+        </div>
+        <div class="projects__grid">
+          <a href="digital.html" class="project-card">
+            <div class="project-card__badge">Digital</div>
+            <h3>Digital & social creatives</h3>
+            <p>Banners, social media, animations, display and performance campaigns.</p>
+            <span class="project-card__link">View work →</span>
+          </a>
+          <a href="ui-web.html" class="project-card">
+            <div class="project-card__badge">UI & Web</div>
+            <h3>Websites, applications, landing pages</h3>
+            <p>UI/UX, prototypes, design systems and frontend implementations.</p>
+            <span class="project-card__link">View work →</span>
+          </a>
+          <a href="dtp.html" class="project-card">
+            <div class="project-card__badge">DTP</div>
+            <h3>Print & publications</h3>
+            <p>Press layouts, print materials, catalogs and publications.</p>
+            <span class="project-card__link">View work →</span>
+          </a>
+          <a href="animacje.html" class="project-card">
+            <div class="project-card__badge">Animations</div>
+            <h3>Motion design & video</h3>
+            <p>Promotional animations, motion graphics, video creatives and campaigns.</p>
+            <span class="project-card__link">View work →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--contact">
+      <div class="container contact__grid">
+        <div>
+          <h2>Contact</h2>
+          <p>
+            Have a project you'd like to discuss, or looking for team support?
+            Write to me – I'll respond as soon as possible.
+          </p>
+          <ul class="contact__info">
+            <li><strong>E-mail:</strong> <a href="mailto:piotrbaranski96@gmail.com">piotrbaranski96@gmail.com</a></li>
+            <li><strong>Phone:</strong> +48 723 224 613</li>
+            <li><strong>Preferred form:</strong> email or short intro call</li>
+          </ul>
+        </div>
+        <div>
+          <form class="contact__form" method="POST" action="https://api.web3forms.com/submit" id="contact-form">
+            <input type="hidden" name="access_key" value="350a660b-7490-42d7-9227-9966740f6b58">
+            <input type="hidden" name="subject" value="New message from portfolio">
+            <input type="hidden" name="to_email" value="piotrbaranski96@gmail.com">
+            <div class="form__row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form__row">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form__row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Briefly describe the project or need" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send message</button>
+            <div id="form-message" class="form__message"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__description">Frontend Developer • UI/UX Designer • Graphic & Motion Designer</p>
+        <p class="footer__subtitle">Digital design and implementation with focus on design, technology and results.</p>
+      </div>
+      <div class="footer__copyright">
+        <span>© <span id="year"></span> Piotr Barański. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
