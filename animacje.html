@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Animacje – Portfolio Piotra Barańskiego</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="subpage">
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" class="nav__logo-img" preserveAspectRatio="xMidYMid meet">
+            <path d="M600,142.79c-96.46,0-185.88,30.1-259.43,81.38V6.34c-73,32.48-138.91,78.02-194.74,133.67v456.77
+              c0,0.06,0,0.12,0,0.18c0,0.06,0,0.12,0,0.18v462.84c55.83,55.65,121.74,101.19,194.74,133.67v-223.9
+              c73.55,51.28,162.97,81.38,259.43,81.38c250.83,0,454.17-203.34,454.17-454.17S850.83,142.79,600,142.79z M600,856.37
+              c-143.27,0-259.41-116.14-259.41-259.41S456.73,337.56,600,337.56S859.41,453.7,859.41,596.96S743.27,856.37,600,856.37z"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">Piotr Barański</span>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html#projects">Portfolio</a>
+        <a href="digital.html">Digital</a>
+        <a href="ui-web.html">UI & Web</a>
+        <a href="dtp.html">DTP</a>
+        <a href="index.html#contact" class="nav__cta">Kontakt</a>
+      </nav>
+      <button class="nav__burger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="subhero">
+      <div class="container">
+        <p class="subhero__eyebrow">Portfolio</p>
+        <h1>Animacje</h1>
+        <p class="subhero__subtitle">
+          Motion design, animacje promocyjne i kreacje wideo – od koncepcji po finalne wdrożenie.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="animations__content">
+          <div class="card card--animations">
+            <div class="animations__icon">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5v14l11-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="currentColor"/>
+              </svg>
+            </div>
+            <h2>Moje animacje</h2>
+            <p class="animations__description">
+              Zobacz moje projekty motion design, animacje promocyjne i kreacje wideo. 
+              Od animacji 2D po kompleksowe kampanie wideo.
+            </p>
+            <a href="https://www.behance.net/gallery/238116983/Portfolio" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
+              <span>Otwórz folder z animacjami</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Piotr Barański.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
