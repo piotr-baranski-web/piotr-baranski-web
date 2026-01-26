@@ -426,6 +426,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelector(".nav__links");
 
   if (burger && links) {
+    // Group CTA and lang together in a wrapper for mobile
+    const cta = links.querySelector(".nav__cta");
+    const lang = links.querySelector(".nav__lang");
+    
+    if (cta && lang) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "nav__links-group";
+      wrapper.style.display = "flex";
+      wrapper.style.gap = "8px";
+      wrapper.style.alignItems = "center";
+      
+      // Insert wrapper before CTA
+      cta.parentNode.insertBefore(wrapper, cta);
+      wrapper.appendChild(cta);
+      wrapper.appendChild(lang);
+    }
+
     burger.addEventListener("click", (e) => {
       e.stopPropagation();
       links.classList.toggle("nav__links--open");
