@@ -360,13 +360,34 @@ function initWorksShowcase() {
     }
   }
 
+  // Function to set container height based on items
+  function setContainerHeight() {
+    const items = showcaseContainer.querySelectorAll('.works-showcase__item');
+    if (items.length > 0) {
+      // Get the height of the first item (all items have same height due to aspect-ratio)
+      const firstItem = items[0];
+      const itemHeight = firstItem.offsetHeight;
+      // Set min-height to maintain layout during fadeOut
+      showcaseContainer.style.minHeight = `${itemHeight}px`;
+    }
+  }
+
   // Initial display
-  displayWorks(works, showcaseContainer, false);
+  displayWorks(works, showcaseContainer, false).then(() => {
+    // Set height after initial load
+    setTimeout(() => {
+      setContainerHeight();
+    }, 100);
+  });
 
   // Continuous animation - replace all works periodically (slower and gentler)
   setInterval(async () => {
     const items = showcaseContainer.querySelectorAll('.works-showcase__item');
     if (items.length > 0) {
+      // Store current height before fade out
+      const currentHeight = showcaseContainer.offsetHeight;
+      showcaseContainer.style.minHeight = `${currentHeight}px`;
+      
       // Fade out all items slowly with animation
       items.forEach((item, index) => {
         setTimeout(() => {
@@ -375,11 +396,16 @@ function initWorksShowcase() {
       });
       
       setTimeout(async () => {
-        // Clear container after fade out completes
+        // Clear container after fade out completes (but keep min-height)
         showcaseContainer.innerHTML = '';
         
         // Display exactly 3 new works (with error handling and animation)
         await displayWorks(works, showcaseContainer, true);
+        
+        // Update height after new items are loaded
+        setTimeout(() => {
+          setContainerHeight();
+        }, 100);
       }, 2000); // Wait longer for fade out to complete
     }
   }, 15000); // Replace every 15 seconds (much slower)
