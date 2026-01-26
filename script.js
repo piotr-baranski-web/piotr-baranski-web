@@ -35,11 +35,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         const formData = new FormData(form);
-        formData.append("access_key", "350a660b-7490-42d7-9227-9966740f6b58");
+        
+        // Web3Forms wymaga dodatkowych pól
+        const name = formData.get("name");
+        const email = formData.get("email");
+        const message = formData.get("message");
+        
+        // Tworzymy nowy FormData z wszystkimi wymaganymi polami
+        const submitData = new FormData();
+        submitData.append("access_key", "350a660b-7490-42d7-9227-9966740f6b58");
+        submitData.append("subject", "Nowa wiadomość z portfolio");
+        submitData.append("from_name", name);
+        submitData.append("from_email", email);
+        submitData.append("message", message);
+        submitData.append("to_email", "piotrbaranski96@gmail.com");
 
         const response = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
-          body: formData
+          body: submitData
         });
 
         const data = await response.json();
